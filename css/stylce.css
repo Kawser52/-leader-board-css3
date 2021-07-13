@@ -7,19 +7,29 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     background-color: #ffffff;
-    width: 890px;
+    width: 70%;
+    padding: 30px;
+    margin-top: 15px;
 }
 /* End common css */
+.header-title{
+    margin-top: 3px;
+    color: #562EFF;
+    font-size: 24px;
+}
 .top-palyers{
-    padding: 30px;
+    
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:30px;
+    margin-bottom: 40px;
 }
 .player img{
     width: 56px;
@@ -28,7 +38,38 @@ main{
 .player{
       display: flex;
       align-items: center;
+      
+
 }
-.header-title{
-    margin-top: 3px;
+.player-name{
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
 }
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+/* top player ses */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 30px;
+}
+
+.blog .thumnail img{
+    width: 224px;
+    height: 127px;
+    margin-right: 20px;
+}
+.blog{
+    display: flex;
+}
+
+.blog-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* blog section ses */
